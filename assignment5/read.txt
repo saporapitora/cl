@@ -1,0 +1,7 @@
+//in Source Package -> generic resource
+@path("/manipulation/{a},{b}")
+@GET
+public String Func(@PathParam("a") String a,@PathParam("b") String b)
+{
+	return a.concat(b);
+}
